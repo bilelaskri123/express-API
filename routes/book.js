@@ -5,9 +5,15 @@ const {
   bookCreatingSchema,
   bookUpdateSchema,
 } = require("../models/Book");
+const isAdmin = require("../middlewares/isAdmin");
 
 // Create a new book
-router.post("/", async (req, res) => {
+/**
+ * @desc Create a new book
+ * @route POST /books
+ * @access Private (only admins should be able to create books)
+ */
+router.post("/", isAdmin, async (req, res) => {
   try {
     const { error, value } = bookCreatingSchema.validate(req.body);
     if (error) {
@@ -22,6 +28,11 @@ router.post("/", async (req, res) => {
 });
 
 // Get all books
+/**
+ * @desc Get all books
+ * @route GET /books
+ * @access Public
+ */
 router.get("/", async (req, res) => {
   try {
     const books = await Book.find().populate("author");
@@ -32,6 +43,11 @@ router.get("/", async (req, res) => {
 });
 
 // Get book by ID
+/**
+ * @desc Get a book by ID
+ * @route GET /books/:id
+ * @access Public
+ */
 router.get("/:id", async (req, res) => {
   try {
     const book = await Book.findById(req.params.id).populate("author", [
@@ -47,8 +63,14 @@ router.get("/:id", async (req, res) => {
     res.status(500).json({ error: "Server error" });
   }
 });
+
 // Update book by ID
-router.put("/:id", async (req, res) => {
+/**
+ * @desc Update a book
+ * @route PUT /books/:id
+ * @access Private (only admins should be able to update books)
+ */
+router.put("/:id", isAdmin, async (req, res) => {
   try {
     const { error, value } = bookUpdateSchema.validate(req.body);
     if (error) {
@@ -67,7 +89,12 @@ router.put("/:id", async (req, res) => {
 });
 
 // Delete book by ID
-router.delete("/:id", async (req, res) => {
+/**
+ * @desc Delete a book
+ * @route DELETE /books/:id
+ * @access Private (only admins should be able to delete books)
+ */
+router.delete("/:id", isAdmin, async (req, res) => {
   try {
     const deletedBook = await Book.findByIdAndDelete(req.params.id);
     if (!deletedBook) {

@@ -5,9 +5,15 @@ const {
   authorCreatingSchema,
   authorUpdateSchema,
 } = require("../models/Author");
+const isAdmin = require("../middlewares/isAdmin");
 
 // Create a new author
-router.post("/", async (req, res) => {
+/**
+ * @desc Create a new author
+ * @route POST /authors
+ * @access Private (only admins should be able to create authors)
+ */
+router.post("/", isAdmin, async (req, res) => {
   try {
     const { error, value } = authorCreatingSchema.validate(req.body);
     if (error) {
@@ -22,6 +28,11 @@ router.post("/", async (req, res) => {
 });
 
 // Get all authors
+/**
+ * @desc Get all authors
+ * @route GET /authors
+ * @access Public
+ */
 router.get("/", async (req, res) => {
   try {
     const authors = await Author.find();
@@ -32,6 +43,11 @@ router.get("/", async (req, res) => {
 });
 
 // Get author by ID
+/**
+ * @desc Get an author by ID
+ * @route GET /authors/:id
+ * @access Public
+ */
 router.get("/:id", async (req, res) => {
   try {
     const author = await Author.findById(req.params.id);
@@ -45,7 +61,12 @@ router.get("/:id", async (req, res) => {
 });
 
 // Update author by ID
-router.put("/:id", async (req, res) => {
+/**
+ * @desc Update an author
+ * @route PUT /authors/:id
+ * @access Private (only admins should be able to update authors)
+ */
+router.put("/:id", isAdmin, async (req, res) => {
   try {
     const { error, value } = authorUpdateSchema.validate(req.body);
     if (error) {
@@ -64,7 +85,12 @@ router.put("/:id", async (req, res) => {
 });
 
 // Delete author by ID
-router.delete("/:id", async (req, res) => {
+/**
+ * @desc Delete an author
+ * @route DELETE /authors/:id
+ * @access Private (only admins should be able to delete authors)
+ */
+router.delete("/:id", isAdmin, async (req, res) => {
   try {
     const deletedAuthor = await Author.findByIdAndDelete(req.params.id);
     if (!deletedAuthor) {
