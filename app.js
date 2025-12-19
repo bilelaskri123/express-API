@@ -1,39 +1,25 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
-const MONGO_URI = process.env.MONGO_URI;
 const NODE_ENV = process.env.NODE_ENV || "development";
 const logger = require("./middlewares/logger");
 const { notFoundHandler, errorHandler } = require("./middlewares/errors");
+const connectDB = require("./config/db");
 
 // Middleware to parse JSON bodies
 app.use(express.json());
 
 // Database connection
-const mongoose = require("mongoose");
-mongoose
-  .connect(MONGO_URI)
-  .then(async () => {
-    console.log("Connected to MongoDB");
-  })
-  .catch((err) => {
-    console.error("Could not connect to MongoDB", err);
-  });
+connectDB();
 
 // Logger middleware
 app.use(logger);
 
-// Import routes
-const authorRoutes = require("./routes/author");
-const bookRoutes = require("./routes/book");
-const authRoutes = require("./routes/auth");
-const userRoutes = require("./routes/users");
-
 // Use routes
-app.use("/auth", authRoutes);
-app.use("/authors", authorRoutes);
-app.use("/books", bookRoutes);
-app.use("/users", userRoutes);
+app.use("/auth", require("./routes/auth"));
+app.use("/authors", require("./routes/author"));
+app.use("/books", require("./routes/book"));
+app.use("/users", require("./routes/users"));
 
 // not found middleware
 app.use(notFoundHandler);
