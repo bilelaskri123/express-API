@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node --env-file .env app.js",
     "start:dev": "node --watch --env-file .env app.js",
+    "import:books": "node --env-file .env scripts/import-books.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

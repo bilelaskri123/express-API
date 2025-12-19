@@ -1,0 +1,702 @@
+[
+  {
+    "title": "Wild Worlds #1",
+    "description": "Exploring the unknown. Facing home. Facing the past. Building the edge.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 6.01,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Modern Journeys #2",
+    "description": "Crossing our future. Facing tomorrow. Building our future. Building tomorrow.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 92.66,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Sacred Legends #3",
+    "description": "Facing tomorrow. Finding home. Exploring the edge. Remembering the past.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 39.28,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Sacred Rivers #4",
+    "description": "Crossing the unknown. Facing the edge.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 53.96,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Lonely Journeys #5",
+    "description": "Exploring home. Crossing tomorrow. Crossing the edge.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 9.91,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Brave Secrets #6",
+    "description": "Building tomorrow. Building the unknown. Facing tomorrow. Finding the past. Remembering tomorrow.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 8.31,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Silent Dreams #7",
+    "description": "Finding the edge. Facing our future. Building the unknown.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 22.28,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Lost Rivers #8",
+    "description": "Breaking our future. Finding the past. Chasing the past. Breaking home.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 57.97,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Lonely Journeys #9",
+    "description": "Finding home. Breaking the unknown. Breaking our future. Breaking the past.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 32.06,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Sacred Worlds #10",
+    "description": "Crossing the unknown. Remembering the mountain. Breaking the mountain. Breaking the past.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 8.34,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Wild Worlds #11",
+    "description": "Crossing the unknown. Crossing the mountain. Exploring the unknown. Building the edge.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 94.12,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Hidden Shadows #12",
+    "description": "Finding the past. Breaking the past. Finding home. Building the mountain.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 48.48,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Lonely Dreams #13",
+    "description": "Exploring the unknown. Crossing the mountain. Breaking the past.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 9.12,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Silent Dreams #14",
+    "description": "Remembering our future. Breaking home. Finding the mountain. Facing the past.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 36.2,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Wild Voices #15",
+    "description": "Facing our future. Chasing our future. Building the unknown. Crossing our future.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 90.56,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Wild Journeys #16",
+    "description": "Breaking the unknown. Crossing tomorrow. Chasing home. Building the edge.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 26.46,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Silent Rivers #17",
+    "description": "Building the unknown. Chasing our future.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 71.25,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Hidden Voices #18",
+    "description": "Chasing the unknown. Building the unknown.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 43.15,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Hidden Journeys #19",
+    "description": "Exploring our future. Remembering the edge. Chasing tomorrow. Crossing the unknown. Exploring the past.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 28.57,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Bright Worlds #20",
+    "description": "Building the edge. Exploring the mountain. Finding the past. Building the edge. Facing the mountain.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 53.23,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Modern Hearts #21",
+    "description": "Chasing our future. Breaking home. Chasing the edge.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 37.57,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Silent Shadows #22",
+    "description": "Breaking the edge. Crossing the unknown.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 61.64,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Bright Secrets #23",
+    "description": "Remembering the edge. Facing home. Chasing home. Crossing tomorrow.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 87.96,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Bright Voices #24",
+    "description": "Finding our future. Crossing our future. Breaking the mountain. Crossing the edge. Exploring the edge.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 84.89,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Bright Worlds #25",
+    "description": "Finding the edge. Finding the past. Chasing the edge. Facing the mountain. Finding home.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 45.55,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Modern Cities #26",
+    "description": "Finding the edge. Exploring the edge. Facing tomorrow. Chasing the unknown.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 35.97,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Silent Journeys #27",
+    "description": "Breaking tomorrow. Finding the unknown. Finding our future.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 73.35,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Lost Secrets #28",
+    "description": "Finding home. Breaking our future. Facing home. Crossing the mountain. Finding the edge.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 9.38,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Modern Voices #29",
+    "description": "Facing the unknown. Remembering home. Finding the unknown. Crossing our future.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 39.97,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Modern Journeys #30",
+    "description": "Exploring home. Breaking the unknown.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 25.14,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Brave Rivers #31",
+    "description": "Crossing the past. Crossing the mountain. Crossing the edge. Breaking the edge. Chasing the unknown.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 16.25,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Modern Legends #32",
+    "description": "Chasing tomorrow. Crossing the mountain. Chasing the unknown. Remembering home.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 20.83,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Sacred Hearts #33",
+    "description": "Building the past. Breaking home. Building the past. Chasing our future. Building the past.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 81.59,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Ancient Legends #34",
+    "description": "Building the past. Exploring home. Crossing tomorrow. Breaking the edge.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 72.9,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Hidden Worlds #35",
+    "description": "Facing the past. Breaking the unknown. Chasing tomorrow.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 6.72,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Hidden Worlds #36",
+    "description": "Facing the unknown. Finding the mountain.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 21.53,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Modern Hearts #37",
+    "description": "Exploring the mountain. Finding the mountain. Facing home. Facing tomorrow. Crossing home.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 60.74,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Bright Worlds #38",
+    "description": "Remembering the mountain. Exploring the unknown. Facing the unknown. Exploring the unknown.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 90.4,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Brave Rivers #39",
+    "description": "Facing our future. Remembering the mountain.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 54.42,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Modern Hearts #40",
+    "description": "Remembering the edge. Building the edge.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 23.72,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Bright Voices #41",
+    "description": "Building the past. Finding our future. Building the past. Exploring the unknown.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 40.45,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Bright Voices #42",
+    "description": "Exploring our future. Remembering the mountain. Crossing the past. Remembering the mountain. Breaking the past.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 67.98,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Wild Secrets #43",
+    "description": "Crossing the past. Exploring our future. Finding the mountain. Chasing the past.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 96.93,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Modern Cities #44",
+    "description": "Chasing the edge. Remembering home. Exploring the past. Chasing the edge.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 23.45,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Silent Journeys #45",
+    "description": "Chasing the past. Exploring the past.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 42.56,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Sacred Hearts #46",
+    "description": "Finding the edge. Building tomorrow. Facing home.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 61.24,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Ancient Hearts #47",
+    "description": "Breaking tomorrow. Crossing our future. Breaking the unknown. Breaking our future.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 83.46,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Lost Shadows #48",
+    "description": "Facing tomorrow. Building our future. Crossing tomorrow. Building the unknown.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 87.52,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Brave Dreams #49",
+    "description": "Breaking the unknown. Remembering the past. Building the unknown. Remembering the past.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 85.45,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Lost Journeys #50",
+    "description": "Remembering the past. Chasing the unknown. Building the past.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 15.71,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Wild Rivers #51",
+    "description": "Exploring the unknown. Remembering home.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 52.67,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Sacred Cities #52",
+    "description": "Building our future. Building the mountain.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 5.61,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Hidden Journeys #53",
+    "description": "Breaking the unknown. Finding the unknown. Exploring the unknown. Exploring the mountain.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 25.08,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Bright Hearts #54",
+    "description": "Crossing the mountain. Exploring the unknown. Crossing home. Building tomorrow.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 94.17,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Wild Shadows #55",
+    "description": "Chasing the mountain. Exploring our future. Breaking the edge. Chasing the past.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 43.75,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Lonely Rivers #56",
+    "description": "Breaking our future. Exploring the past. Finding the edge. Facing the mountain. Exploring the mountain.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 64.91,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Ancient Rivers #57",
+    "description": "Breaking the unknown. Remembering tomorrow.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 58.7,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Bright Journeys #58",
+    "description": "Building the edge. Chasing the mountain.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 25.54,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Modern Journeys #59",
+    "description": "Chasing home. Breaking the unknown. Finding the edge. Breaking home. Building the edge.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 9.66,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Lost Worlds #60",
+    "description": "Chasing the unknown. Building the past. Remembering tomorrow. Crossing tomorrow.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 84.19,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Lost Worlds #61",
+    "description": "Facing our future. Crossing home.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 97.72,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Sacred Journeys #62",
+    "description": "Exploring the past. Building home. Building home. Building tomorrow.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 38.5,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Lonely Secrets #63",
+    "description": "Building the past. Facing the mountain. Finding the unknown. Finding home.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 63.58,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Bright Journeys #64",
+    "description": "Remembering tomorrow. Remembering our future. Facing tomorrow. Finding tomorrow.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 42.36,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Brave Cities #65",
+    "description": "Breaking home. Exploring the mountain. Building our future.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 68.09,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Sacred Shadows #66",
+    "description": "Building the mountain. Breaking tomorrow. Crossing the past. Crossing the past. Exploring tomorrow.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 15.8,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Bright Voices #67",
+    "description": "Finding the past. Building home. Crossing the past. Remembering the past.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 67.29,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Bright Legends #68",
+    "description": "Exploring our future. Crossing the edge. Breaking home. Facing home. Remembering home.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 20.01,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Lost Voices #69",
+    "description": "Breaking our future. Chasing the mountain. Remembering home. Remembering home.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 23.59,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Modern Shadows #70",
+    "description": "Chasing the unknown. Chasing the edge. Building our future. Building the past.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 91.49,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Lost Cities #71",
+    "description": "Breaking the past. Remembering tomorrow. Finding the unknown. Exploring the edge. Breaking tomorrow.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 38.59,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Modern Rivers #72",
+    "description": "Building the unknown. Building tomorrow.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 93.02,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Sacred Journeys #73",
+    "description": "Facing the unknown. Finding our future. Chasing our future. Chasing the mountain. Breaking our future.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 46.27,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Bright Cities #74",
+    "description": "Breaking the mountain. Crossing the mountain. Building the mountain. Facing the unknown. Remembering the unknown.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 46.24,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Silent Rivers #75",
+    "description": "Finding home. Building the unknown. Finding the mountain.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 32.37,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Hidden Worlds #76",
+    "description": "Chasing our future. Exploring the mountain. Facing the unknown. Breaking the past. Exploring the mountain.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 12.61,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Brave Dreams #77",
+    "description": "Finding the past. Chasing the edge. Facing tomorrow. Finding the past. Chasing the past.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 66.51,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Bright Journeys #78",
+    "description": "Remembering the mountain. Facing our future. Building the mountain. Building our future.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 51,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Modern Legends #79",
+    "description": "Exploring the past. Breaking the edge. Breaking the mountain. Facing the mountain.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 72.53,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Brave Rivers #80",
+    "description": "Chasing tomorrow. Breaking our future. Finding the past. Facing tomorrow.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 84.26,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Lonely Shadows #81",
+    "description": "Crossing the unknown. Facing the unknown.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 5.97,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Hidden Shadows #82",
+    "description": "Building the past. Exploring home.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 75.81,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Modern Cities #83",
+    "description": "Exploring our future. Finding home.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 69.95,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Ancient Journeys #84",
+    "description": "Building the unknown. Breaking the unknown. Chasing home. Chasing the mountain. Facing tomorrow.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 9.26,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Lost Legends #85",
+    "description": "Chasing the edge. Remembering home. Remembering tomorrow. Remembering the mountain. Building our future.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 13.67,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Hidden Worlds #86",
+    "description": "Building our future. Chasing tomorrow. Crossing the past. Remembering the mountain.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 42.83,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Lonely Rivers #87",
+    "description": "Facing tomorrow. Remembering the unknown. Building the past. Finding the past.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 22.51,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Hidden Rivers #88",
+    "description": "Remembering our future. Crossing tomorrow.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 48.05,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Sacred Dreams #89",
+    "description": "Crossing our future. Chasing home. Building the mountain.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 90.98,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Lost Worlds #90",
+    "description": "Chasing the edge. Breaking home. Building the past. Exploring home.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 60.7,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Sacred Dreams #91",
+    "description": "Building our future. Exploring the unknown. Exploring the edge. Breaking tomorrow.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 88.64,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Brave Voices #92",
+    "description": "Finding the edge. Exploring tomorrow. Facing our future. Remembering our future. Building tomorrow.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 29.76,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Brave Rivers #93",
+    "description": "Breaking the unknown. Breaking the edge.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 72.35,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Modern Legends #94",
+    "description": "Breaking the edge. Building the past.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 74.96,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Wild Hearts #95",
+    "description": "Breaking the edge. Remembering the past.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 67.56,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Wild Dreams #96",
+    "description": "Finding the edge. Crossing the edge. Exploring our future. Breaking the edge. Building home.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 53.06,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Wild Voices #97",
+    "description": "Remembering the past. Chasing our future. Breaking the mountain. Chasing the mountain. Remembering the edge.",
+    "author": "69413a707e9e7c3f938e46ae",
+    "price": 22.77,
+    "coverImage": "hard cover"
+  },
+  {
+    "title": "Sacred Shadows #98",
+    "description": "Facing the past. Exploring the mountain. Finding tomorrow. Breaking the unknown.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 44.96,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Modern Voices #99",
+    "description": "Exploring the past. Remembering the past. Breaking the mountain. Crossing home.",
+    "author": "6945512ba0d1b12e152e5677",
+    "price": 7.17,
+    "coverImage": "soft cover"
+  },
+  {
+    "title": "Lonely Secrets #100",
+    "description": "Remembering the past. Crossing tomorrow.",
+    "author": "69413a9c7e9e7c3f938e46b0",
+    "price": 97.2,
+    "coverImage": "hard cover"
+  }
+]

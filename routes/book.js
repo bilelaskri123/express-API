@@ -1,11 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const {
-  Book,
-  bookCreatingSchema,
-  bookUpdateSchema,
-} = require("../models/Book");
 const isAdmin = require("../middlewares/isAdmin");
+const asyncHandler = require("../middlewares/asyncHandler");
+const bookController = require("../controllers/bookController");
 
 // Create a new book
 /**
@@ -13,19 +10,7 @@ const isAdmin = require("../middlewares/isAdmin");
  * @route POST /books
  * @access Private (only admins should be able to create books)
  */
-router.post("/", isAdmin, async (req, res) => {
-  try {
-    const { error, value } = bookCreatingSchema.validate(req.body);
-    if (error) {
-      return res.status(400).json({ error: error.details[0].message });
-    }
-    const newBook = new Book(value);
-    const savedBook = await newBook.save();
-    res.status(201).json(savedBook);
-  } catch (err) {
-    res.status(500).json({ error: "Server error" });
-  }
-});
+router.post("/", isAdmin, asyncHandler(bookController.createBook));
 
 // Get all books
 /**
@@ -33,14 +18,7 @@ router.post("/", isAdmin, async (req, res) => {
  * @route GET /books
  * @access Public
  */
-router.get("/", async (req, res) => {
-  try {
-    const books = await Book.find().populate("author");
-    res.status(200).json(books);
-  } catch (err) {
-    res.status(500).json({ error: "Server error" });
-  }
-});
+router.get("/", asyncHandler(bookController.getBooks));
 
 // Get book by ID
 /**
@@ -48,21 +26,7 @@ router.get("/", async (req, res) => {
  * @route GET /books/:id
  * @access Public
  */
-router.get("/:id", async (req, res) => {
-  try {
-    const book = await Book.findById(req.params.id).populate("author", [
-      "firstName",
-      "lastName",
-      "_id",
-    ]);
-    if (!book) {
-      return res.status(404).json({ error: "Book not found" });
-    }
-    res.status(200).json(book);
-  } catch (err) {
-    res.status(500).json({ error: "Server error" });
-  }
-});
+router.get("/:id", asyncHandler(bookController.getBookById));
 
 // Update book by ID
 /**
@@ -70,23 +34,7 @@ router.get("/:id", async (req, res) => {
  * @route PUT /books/:id
  * @access Private (only admins should be able to update books)
  */
-router.put("/:id", isAdmin, async (req, res) => {
-  try {
-    const { error, value } = bookUpdateSchema.validate(req.body);
-    if (error) {
-      return res.status(400).json({ error: error.details[0].message });
-    }
-    const updatedBook = await Book.findByIdAndUpdate(req.params.id, value, {
-      new: true,
-    });
-    if (!updatedBook) {
-      return res.status(404).json({ error: "Book not found" });
-    }
-    res.status(200).json(updatedBook);
-  } catch (err) {
-    res.status(500).json({ error: "Server error" });
-  }
-});
+router.put("/:id", isAdmin, asyncHandler(bookController.updateBook));
 
 // Delete book by ID
 /**
@@ -94,16 +42,6 @@ router.put("/:id", isAdmin, async (req, res) => {
  * @route DELETE /books/:id
  * @access Private (only admins should be able to delete books)
  */
-router.delete("/:id", isAdmin, async (req, res) => {
-  try {
-    const deletedBook = await Book.findByIdAndDelete(req.params.id);
-    if (!deletedBook) {
-      return res.status(404).json({ error: "Book not found" });
-    }
-    res.status(200).json({ message: "Book deleted successfully" });
-  } catch (err) {
-    res.status(500).json({ error: "Server error" });
-  }
-});
+router.delete("/:id", isAdmin, asyncHandler(bookController.deleteBook));
 
 module.exports = router;

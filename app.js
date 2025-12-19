@@ -15,11 +15,8 @@ connectDB();
 // Logger middleware
 app.use(logger);
 
-// Use routes
-app.use("/auth", require("./routes/auth"));
-app.use("/authors", require("./routes/author"));
-app.use("/books", require("./routes/book"));
-app.use("/users", require("./routes/users"));
+// Use routes (centralized)
+app.use("/", require("./routes"));
 
 // not found middleware
 app.use(notFoundHandler);

@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const { User, userUpdateSchema } = require("../models/User");
-const verifyToken = require("../middlewares/verifyToken");
+const asyncHandler = require("../middlewares/asyncHandler");
 const isAdmin = require("../middlewares/isAdmin");
 const isAdminOrhasId = require("../middlewares/isAdminOrhasId");
+const userController = require("../controllers/userController");
 
 // Get all users
 /**
@@ -11,14 +11,7 @@ const isAdminOrhasId = require("../middlewares/isAdminOrhasId");
  * @route GET /users
  * @access Private
  */
-router.get("/", isAdmin, async (req, res) => {
-  try {
-    const users = await User.find().select("-password");
-    res.status(200).json(users);
-  } catch (err) {
-    res.status(500).json({ error: "Server error" });
-  }
-});
+router.get("/", isAdmin, asyncHandler(userController.getUsers));
 
 // Get user by ID
 /**
@@ -26,17 +19,7 @@ router.get("/", isAdmin, async (req, res) => {
  * @route GET /users/:id
  * @access Private
  */
-router.get("/:id", isAdminOrhasId, async (req, res) => {
-  try {
-    const user = await User.findById(req.params.id).select("-password");
-    if (!user) {
-      return res.status(404).json({ error: "User not found" });
-    }
-    res.status(200).json(user);
-  } catch (err) {
-    res.status(500).json({ error: "Server error" });
-  }
-});
+router.get("/:id", isAdminOrhasId, asyncHandler(userController.getUserById));
 
 // Update user by ID
 /**
@@ -44,24 +27,7 @@ router.get("/:id", isAdminOrhasId, async (req, res) => {
  * @route PUT /users/:id
  * @access Private
  */
-router.put("/:id", isAdminOrhasId, async (req, res) => {
-  try {
-    const { error, value } = userUpdateSchema.validate(req.body);
-    if (error) {
-      return res.status(400).json({ error: error.details[0].message });
-    }
-
-    const updatedUser = await User.findByIdAndUpdate(req.params.id, value, {
-      new: true,
-    }).select("-password");
-    if (!updatedUser) {
-      return res.status(404).json({ error: "User not found" });
-    }
-    res.status(200).json(updatedUser);
-  } catch (err) {
-    res.status(500).json({ error: "Server error" });
-  }
-});
+router.put("/:id", isAdminOrhasId, asyncHandler(userController.updateUser));
 
 // Delete user by ID
 /**
@@ -69,16 +35,6 @@ router.put("/:id", isAdminOrhasId, async (req, res) => {
  * @route DELETE /users/:id
  * @access Private
  */
-router.delete("/:id", isAdminOrhasId, async (req, res) => {
-  try {
-    const deletedUser = await User.findByIdAndDelete(req.params.id);
-    if (!deletedUser) {
-      return res.status(404).json({ error: "User not found" });
-    }
-    res.status(200).json({ message: "User deleted successfully" });
-  } catch (err) {
-    res.status(500).json({ error: "Server error" });
-  }
-});
+router.delete("/:id", isAdminOrhasId, asyncHandler(userController.deleteUser));
 
 module.exports = router;
