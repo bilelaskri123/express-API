@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const { User, userUpdateSchema } = require("../models/User");
 const verifyToken = require("../middlewares/verifyToken");
+const isAdmin = require("../middlewares/isAdmin");
+const isAdminOrhasId = require("../middlewares/isAdminOrhasId");
 
 // Get all users
 /**
@@ -9,7 +11,7 @@ const verifyToken = require("../middlewares/verifyToken");
  * @route GET /users
  * @access Private
  */
-router.get("/", async (req, res) => {
+router.get("/", isAdmin, async (req, res) => {
   try {
     const users = await User.find().select("-password");
     res.status(200).json(users);
@@ -24,7 +26,7 @@ router.get("/", async (req, res) => {
  * @route GET /users/:id
  * @access Private
  */
-router.get("/:id", async (req, res) => {
+router.get("/:id", isAdminOrhasId, async (req, res) => {
   try {
     const user = await User.findById(req.params.id).select("-password");
     if (!user) {
@@ -42,12 +44,8 @@ router.get("/:id", async (req, res) => {
  * @route PUT /users/:id
  * @access Private
  */
-router.put("/:id", verifyToken, async (req, res) => {
+router.put("/:id", isAdminOrhasId, async (req, res) => {
   try {
-    if (req.user.id !== req.params.id) {
-      return res.status(403).json({ error: "Unauthorized" });
-    }
-
     const { error, value } = userUpdateSchema.validate(req.body);
     if (error) {
       return res.status(400).json({ error: error.details[0].message });
@@ -71,11 +69,8 @@ router.put("/:id", verifyToken, async (req, res) => {
  * @route DELETE /users/:id
  * @access Private
  */
-router.delete("/:id", verifyToken, async (req, res) => {
+router.delete("/:id", isAdminOrhasId, async (req, res) => {
   try {
-    if (req.user.id !== req.params.id) {
-      return res.status(403).json({ error: "Unauthorized" });
-    }
     const deletedUser = await User.findByIdAndDelete(req.params.id);
     if (!deletedUser) {
       return res.status(404).json({ error: "User not found" });
