@@ -5,6 +5,8 @@ const NODE_ENV = process.env.NODE_ENV || "development";
 const logger = require("./middlewares/logger");
 const { notFoundHandler, errorHandler } = require("./middlewares/errors");
 const connectDB = require("./config/db");
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpec = require('./docs/swagger');
 
 // Middleware to parse JSON bodies
 app.use(express.json());
@@ -13,7 +15,8 @@ app.use(express.json());
 
 // Logger middleware
 app.use(logger);
-
+// Swagger UI
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 // Use routes (centralized)
 app.use("/", require("./routes"));
 
