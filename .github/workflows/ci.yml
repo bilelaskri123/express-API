@@ -11,10 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x, 20.x]
+        node-version: [20.x, 22.x]
     env:
       JWT_SECRET: test_jwt_secret
     steps:
+      - name: Install libssl1.1 for mongodb-memory-server
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libssl1.1 || \
+            (wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.1/libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb && \
+             sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb)
       - uses: actions/checkout@v4
       - name: Setup Node.js
         uses: actions/setup-node@v4
