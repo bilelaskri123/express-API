@@ -7,7 +7,13 @@
     "start": "node --env-file .env app.js",
     "start:dev": "node --watch --env-file .env app.js",
     "import:books": "node --env-file .env scripts/import-books.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^8.16.1",
+    "supertest": "^6.3.4"
   },
   "keywords": [],
   "author": "",
