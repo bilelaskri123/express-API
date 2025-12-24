@@ -6,6 +6,7 @@ const { User, userCreatingSchema, userLoginSchema } = require("../models/User");
 
 const asyncHandler = require("../middlewares/asyncHandler");
 const authController = require("../controllers/authController");
+const passwordController = require("../controllers/passwordController");
 
 // Register a new user
 router.post("/register", asyncHandler(authController.register));
@@ -18,4 +19,8 @@ router.post("/register", asyncHandler(authController.register));
  */
 router.post("/login", asyncHandler(authController.login));
 
+// forget password route could be added here
+router;
+
+// Export the router
 module.exports = router;

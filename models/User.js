@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
       trim: true,
-      minlength: 6,
+      minlength: 8,
     },
     role: {
       type: String,
@@ -69,7 +69,9 @@ userSchema.methods.generateAuthToken = function () {
 const userCreatingSchema = Joi.object({
   email: Joi.string().email().min(5).max(200).required(),
   username: Joi.string().min(3).max(100).required(),
-  password: Joi.string().min(6).required(),
+  password: Joi.string()
+    .pattern(new RegExp("^[a-zA-Z0-9@!#$%]{8,30}$"))
+    .required(),
   role: Joi.string().valid("user", "admin").required(),
 });
 
@@ -77,14 +79,18 @@ const userCreatingSchema = Joi.object({
 const userUpdateSchema = Joi.object({
   email: Joi.string().email().min(5).max(200).optional(),
   username: Joi.string().min(3).max(100).optional(),
-  password: Joi.string().min(6).optional(),
+  password: Joi.string()
+    .pattern(new RegExp("^[a-zA-Z0-9@!#$%]{8,30}$"))
+    .optional(),
   role: Joi.string().valid("user", "admin").optional(),
 });
 
 // Validate schema for login User
 const userLoginSchema = Joi.object({
   email: Joi.string().email().min(5).max(200).required(),
-  password: Joi.string().min(6).required(),
+  password: Joi.string()
+    .pattern(new RegExp("^[a-zA-Z0-9@!#$%]{8,30}$"))
+    .required(),
 });
 
 const User = mongoose.model("User", userSchema);
