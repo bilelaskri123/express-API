@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node --env-file .env app.js",
     "start:dev": "node --watch --env-file .env app.js",
+    "start:docker": "node app.js",
     "import:books": "node --env-file .env scripts/import-books.js",
     "test": "jest --runInBand",
     "test:watch": "jest --watch"
@@ -13,9 +14,7 @@
   "devDependencies": {
     "jest": "^29.7.0",
     "mongodb-memory-server": "^8.16.1",
-    "supertest": "^6.3.4",
-    "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^4.6.3"
+    "supertest": "^6.3.4"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +27,8 @@
     "helmet": "^8.1.0",
     "joi": "^18.0.2",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.0.1"
+    "mongoose": "^9.0.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3"
   }
 }

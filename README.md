@@ -56,3 +56,38 @@ npm test
 ## Continuous Integration
 
 A GitHub Actions workflow (`.github/workflows/ci.yml`) runs the test suite on push and pull requests (Node 18 and 20).
+
+## Docker (Production)
+
+A production docker-compose is provided in `docker-compose.prod.yml`.
+
+Quick steps to run in production mode locally (example):
+
+1. Create a `.env.prod` file (keep it secret) with values such as:
+
+```
+MONGO_INITDB_ROOT_USERNAME=root
+MONGO_INITDB_ROOT_PASSWORD=example
+MONGO_URI=mongodb://root:example@mongo:27017/your-db?authSource=admin
+JWT_SECRET=your_prod_jwt_secret
+PORT=3000
+```
+
+2. Build and start the production stack:
+
+```bash
+docker compose -f docker-compose.prod.yml --env-file .env.prod up --build -d
+```
+
+3. Check services and logs:
+
+```bash
+docker compose -f docker-compose.prod.yml ps
+docker compose -f docker-compose.prod.yml logs -f app
+```
+
+Notes:
+
+- In production deploys you should use real credentials and secrets management (Docker secrets, cloud KMS, or your orchestrator).
+- The app exposes a `/health` endpoint used by the Docker healthcheck.
+- The `mongo` service uses a named volume `mongo-data` to persist data across restarts.

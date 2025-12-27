@@ -20,7 +20,10 @@ router.post("/register", asyncHandler(authController.register));
 router.post("/login", asyncHandler(authController.login));
 
 // forget password route could be added here
-router;
+router.post(
+  "/forgot-password",
+  asyncHandler(passwordController.sendForgotPasswordLink)
+);
 
 // Export the router
 module.exports = router;

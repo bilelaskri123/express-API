@@ -23,7 +23,8 @@ app.use(logger);
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 // Use routes (centralized)
 app.use("/", require("./routes"));
-
+// Lightweight health endpoint used by Docker and orchestration
+app.get("/health", (req, res) => res.status(200).json({ status: "ok" }));
 // not found middleware
 app.use(notFoundHandler);
 
